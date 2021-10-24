@@ -1,0 +1,14 @@
+.bg_color{background-color: #e2e2e2 !important;}
+.form_search{
+	border-radius: 33px;
+    border: 1px solid #21252924;
+    background-color: #f9f9f9;
+}
+.header_title h3{
+	margin-bottom: unset;
+	color: #4d7b19;
+}
+.header_title span{
+	color: #5C4033;
+    font-size: 12px;
+}
