@@ -14,3 +14,7 @@
 	color: #5C4033;
     font-size: 12px;
 }
+#match-list{
+    position: absolute;
+    z-index: 1;
+}
