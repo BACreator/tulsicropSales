@@ -33,22 +33,62 @@
 		</div>
 	</div><!--End of header-->
 
+
 	<!-- Search form -->
 	<div class="container">
-		<div class="active-pink-4 mb-4 mt-4">
+		<div class="active-pink-4 mb-2 mt-4">
 		  <input class="form-control form_search" type="text" placeholder="Search" aria-label="Search" id="search">
 		</div>
-		<div id="match-list"></div>
+		<ul id="match-list" name="matchid"></ul>
 	</div><!-- End of Search form -->
 	
-	<div class="container"><!-- Strat of login container-->
+	<div class="container signInUp"><!-- Strat of login container-->
 		<div class="row" id="viewhide"><!-- Strat of login row-->
-			<div class="col-md-6 d-none d-sm-block"><!--start of col login img-->
+			<!--div class="col-md-6 d-none d-sm-block"><!--start of col login img>
 				<img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-27424,resizemode-1,msid-14351710/industry/healthcare/biotech/pharmaceuticals/free-medicines-to-all-patients-in-government-hospitals-from-november.jpg">
-			</div><!--End of col login img-->
-			<div class="col-md-6 text-center fadeIn first"><!--Start col login-->
+			</div--><!--End of col login img-->
+			<!--SignIn Form Layout-->
+			<form class="form signInUpForm" id="login">
+				<h4 class="form_title">Login</h4>
+				<div class="form_message form_message_error"></div>
+				<div class="form_input_group">
+					<input type="text" class="form_input" placeholder="Username or email" autofocus>
+					<div class="form_input_error_message"></div>
+				</div>
+				<div class="form_input_group">
+					<input type="password" class="form_input" placeholder="Password" autofocus>
+					<div class="form_input_error_message"></div>
+				</div>
+				<button class="form_button" type="submit">Continue</button>
+				<p class="form_text"><a href="#" class="form_link">Forgot your password?</a></p>
+				<p class="form_text"><a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create account.</a></p>
+			</form>
+			<!--SignUp Form Layout-->
+			<form action="connect.php" method="post" class="form signInUpForm form_hidden" id="createAccount">
+				<h4 class="form_title">Create Account</h4>
+				<div class="form_message form_message_error"></div>
+				<div class="form_input_group">
+					<input type="text" class="form_input" id="signupUsername" placeholder="Username" name="username" autofocus>
+					<div class="form_input_error_message"></div>
+				</div>
+				<div class="form_input_group">
+					<input type="text" class="form_input" placeholder="Email Address" name="email" autofocus>
+					<div class="form_input_error_message"></div>
+				</div>
+				<div class="form_input_group">
+					<input type="password" class="form_input" id="signuppassword" placeholder="Password" name="password" autofocus>
+					<div class="form_input_error_message"></div>
+				</div>
+				<div class="form_input_group">
+					<input type="password" class="form_input" placeholder="Confirm password" autofocus>
+					<div class="form_input_error_message"></div>
+				</div>
+				<button class="form_button" name="submit" type="submit">Continue</button>
+				<p class="form_text"><a class="form_link" href="./" id="linklogin">Already have an account? Sign in.</a></p>
+			</form>
+			<!--div class="col-md-6 text-center fadeIn first"><!--Start col login>
 				<h2>Sign In</h2>
-				 	<!-- Login Form -->
+				 	<!-- Login Form >
 				  	<form>
 				  	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
 				  	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
@@ -60,9 +100,17 @@
 				  	    <h5>You don't have an account ?</h5>
 				  	    <input type="button" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto mb-5 btn-round" value="Register">
 				  	</form>
-			</div><!-- End of col login-->
+			</div--><!-- End of col login-->
 		</div><!-- End of login row-->
 	</div><!-- End of login container-->
+	
+	<!--div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<label id="prod_name"></label>
+			</div>
+		</div>
+	</div-->
 
 	<!--Footer-->
 	<div class="container-fluid p-0 fixed-bottom">
@@ -72,6 +120,7 @@
 	</div>
 
 <script src="lib/js/search.js"></script>
+<script src="lib/js/credentials.js"></script>
 
 </body>
 </html>
