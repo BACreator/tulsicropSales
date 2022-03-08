@@ -1,126 +1,168 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tulsi Corporation</title>
-    <meta name="keywords" content="HTML5 Template">
-    <meta name="description" content="Tulsi Corporation">
-    <meta name="author" content="p-themes">
-   
-    <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css">
+	<html>
+		<head>
+    		<meta charset="UTF-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    		<title>Tulsi Corporation</title>
+    		<meta name="keywords" content="HTML5 Template">
+    		<meta name="description" content="Tulsi Corporation">
+    		<meta name="author" content="p-themes">
+    		
+    		<!-- Plugins CSS File -->
+    		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    		<link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
+    		<link rel="stylesheet" href="assets/css/plugins/magnific-popup/magnific-popup.css">
+    		<link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css">
 
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/skins/skin-demo-2.css">
-    <link rel="stylesheet" href="assets/css/demos/demo-2.css">
+    		<!-- Main CSS File -->
+    		<link rel="stylesheet" href="assets/css/style.css">
+    		<link rel="stylesheet" href="assets/css/skins/skin-demo-2.css">
+    		<link rel="stylesheet" href="assets/css/demos/demo-2.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-	<!--Header-->
-	<div class="container-fluid p-0">
-		<div class="bg_color header_title p-3">
-			<h3>Tulsi Corporation</h3>
-			<span><b>Working towards healthier world</b></span>
-		</div>
-	</div><!--End of header-->
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    		
+    		<link rel="stylesheet" href="assets/css/styles.css">
+		</head>
+		<body>
+			<!--Header Layout-->
+			<div class="container-fluid p-0">
+				<div class="bg_color header_title p-3">
+					<h3>Tulsi Corporation</h3>
+					<span><b>Working towards healthier world</b></span>
+				</div>
+			</div><!--End of header-->
+			<!-- Search form -->
+			<div class="container">
+				<div class="active-pink-4 mb-2 mt-4">
+				  <input class="form-control form_search" type="text" placeholder="Search" aria-label="Search" id="search" value="">
+				</div>
+				<ul id="match-list" name="matchid"></ul>
+			</div><!-- End of Search form -->
+			<!-- Product modal -->
+			<div class="popupmodal hide" id="modal">
+				<div class="modal-header">
+					<div class="title"><h4 class="mb-0" id="prod_name"></h4></div>
+					<button data-close-button class="close-button">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+					   	<div class="row row-sm">
+					      	<div class="col-md-6 _boxzoom">
+					         	<div class="zoom-thumb">
+					            	<ul class="piclist">
+					               		<li><img src="" alt="product_img"></li>
+					               		<!--li><img src="" alt=""></li>
+					               		<li><img src="" alt=""></li>
+					               		<li><img src="" alt=""></li-->
+					            	</ul>
+					         	</div>
+					         	<!--div class="_product-images">
+					            	<div class="picZoomer">
+					               		<img class="my_img" src="https://s.fotorama.io/1.jpg" alt="">
+					            	</div>
+					         	</div-->
+					     	</div>
+					      	<div class="col-md-6">
+					         	<div class="_product-detail-content">
+					            	<div class="_p-price-box">
+					               		<div class="p-list">
+					                  		<span> M.R.P. : </span>
+					                  		<span class="price" id="prod_rate"></span>
+					               		</div>
+					               		<div class="p-list">
+					                  		<span> Quantity : </span>
+					                  		<span class="price" id="prod_quant"></span>
+					               		</div>
+					               		<div class="p-list">
+					                  		<span> M.S.R. : <i class="fa fa-inr"></i></span>
+					                  		<span class="price" id="prod_id"></span>
+					               		</div>
+					               		<div class="_p-add-cart">
+					                  		<div class="p_qty">
+					                     		<span>Add Quantity</span>
+					                     		<div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+					                     		<input type="number" name="qty" id="number" value="1" />
+					                     		<div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+					                  		</div>
+					               		</div>					               
+					               		<form action="" method="post" accept-charset="utf-8">
+					                  		<ul class="spe_ul"></ul>
+					                  		<div class="_p-qty-and-cart">
+					                     		<div class="_p-add-cart">
+					                        		<button class="btn-theme btn buy-btn" tabindex="0">
+					                        			<i class="fa fa-shopping-cart"></i> Buy Now
+					                        		</button>
+					                        		<button class="btn-theme btn btn-success" tabindex="0">
+					                       	 			<i class="fa fa-shopping-cart"></i> Add to Cart
+					                        		</button>
+					                        		<input type="hidden" name="pid" value="18" />
+					                        		<input type="hidden" name="price" value="850" />
+					                        		<input type="hidden" name="url" value="" />    
+					                     		</div>
+					                  		</div>
+					               		</form>
+					            	</div>
+					         	</div>
+					      	</div>
+					   	</div>
+					</div>
+				</div><!--End of modal body-->
+			</div><!--End of popupmodal-->
+			<div id="overlay"></div>
 
-
-	<!-- Search form -->
-	<div class="container">
-		<div class="active-pink-4 mb-2 mt-4">
-		  <input class="form-control form_search" type="text" placeholder="Search" aria-label="Search" id="search">
-		</div>
-		<ul id="match-list" name="matchid"></ul>
-	</div><!-- End of Search form -->
-	
-	<div class="container signInUp"><!-- Strat of login container-->
-		<div class="row" id="viewhide"><!-- Strat of login row-->
-			<!--div class="col-md-6 d-none d-sm-block"><!--start of col login img>
-				<img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-27424,resizemode-1,msid-14351710/industry/healthcare/biotech/pharmaceuticals/free-medicines-to-all-patients-in-government-hospitals-from-november.jpg">
-			</div--><!--End of col login img-->
-			<!--SignIn Form Layout-->
-			<form class="form signInUpForm" id="login">
-				<h4 class="form_title">Login</h4>
-				<div class="form_message form_message_error"></div>
-				<div class="form_input_group">
-					<input type="text" class="form_input" placeholder="Username or email" autofocus>
-					<div class="form_input_error_message"></div>
+			<!-- Start of signIn/Up container-->
+			<div class="container signInUp" id="viewhide">
+				<div class="row">
+					<!--SignIn Form Layout-->
+					<form class="form signInUpForm" id="login">
+						<h4 class="form_title">Login</h4>
+						<div class="form_message form_message_error"></div>
+						<div class="form_input_group">
+							<input type="text" class="form_input" placeholder="Username or email" autofocus>
+							<div class="form_input_error_message"></div>
+						</div>
+						<div class="form_input_group">
+							<input type="password" class="form_input" placeholder="Password" autofocus>
+							<div class="form_input_error_message"></div>
+						</div>
+						<button class="form_button" type="submit">Continue</button>
+						<p class="form_text"><a href="#" class="form_link">Forgot your password?</a></p>
+						<p class="form_text"><a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create account.</a></p>
+					</form>
+					<!--SignUp Form Layout-->
+					<form action="connect.php" method="post" class="form signInUpForm form_hidden" id="createAccount">
+						<h4 class="form_title">Create Account</h4>
+						<div class="form_message form_message_error"></div>
+						<div class="form_input_group">
+							<input type="text" class="form_input" id="signupUsername" placeholder="Username" name="username" autofocus>
+							<div class="form_input_error_message"></div>
+						</div>
+						<div class="form_input_group">
+							<input type="text" class="form_input" placeholder="Email Address" name="email" autofocus>
+							<div class="form_input_error_message"></div>
+						</div>
+						<div class="form_input_group">
+							<input type="password" class="form_input" id="signuppassword" placeholder="Password" name="password" autofocus>
+							<div class="form_input_error_message"></div>
+						</div>
+						<div class="form_input_group">
+							<input type="password" class="form_input" placeholder="Confirm password" autofocus>
+							<div class="form_input_error_message"></div>
+						</div>
+						<button class="form_button" name="submit" type="submit">Continue</button>
+						<p class="form_text"><a class="form_link" href="./" id="linklogin">Already have an account? Sign in.</a></p>
+					</form>
+				</div><!-- End of signIn/Up row-->
+			</div><!-- End of signIn/Up container-->
+			<!--Footer Layout-->
+			<div class="container-fluid p-0 fixed-bottom">
+				<div class="row bg_color">
+					<div class="col-sm-12 text-center"><p>Copyright © 2021. All Rights Reserved By Tulsi Corporation.</p></div>
 				</div>
-				<div class="form_input_group">
-					<input type="password" class="form_input" placeholder="Password" autofocus>
-					<div class="form_input_error_message"></div>
-				</div>
-				<button class="form_button" type="submit">Continue</button>
-				<p class="form_text"><a href="#" class="form_link">Forgot your password?</a></p>
-				<p class="form_text"><a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create account.</a></p>
-			</form>
-			<!--SignUp Form Layout-->
-			<form action="connect.php" method="post" class="form signInUpForm form_hidden" id="createAccount">
-				<h4 class="form_title">Create Account</h4>
-				<div class="form_message form_message_error"></div>
-				<div class="form_input_group">
-					<input type="text" class="form_input" id="signupUsername" placeholder="Username" name="username" autofocus>
-					<div class="form_input_error_message"></div>
-				</div>
-				<div class="form_input_group">
-					<input type="text" class="form_input" placeholder="Email Address" name="email" autofocus>
-					<div class="form_input_error_message"></div>
-				</div>
-				<div class="form_input_group">
-					<input type="password" class="form_input" id="signuppassword" placeholder="Password" name="password" autofocus>
-					<div class="form_input_error_message"></div>
-				</div>
-				<div class="form_input_group">
-					<input type="password" class="form_input" placeholder="Confirm password" autofocus>
-					<div class="form_input_error_message"></div>
-				</div>
-				<button class="form_button" name="submit" type="submit">Continue</button>
-				<p class="form_text"><a class="form_link" href="./" id="linklogin">Already have an account? Sign in.</a></p>
-			</form>
-			<!--div class="col-md-6 text-center fadeIn first"><!--Start col login>
-				<h2>Sign In</h2>
-				 	<!-- Login Form >
-				  	<form>
-				  	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
-				  	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-				  	        
-						<div id="formFooter">
-				  	      	<a class="underlineHover mb-2" href="#">Forgot Password?</a>
-				  	    </div>
-				  	    <input type="submit" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto mb-2 btn-round" value="Login">
-				  	    <h5>You don't have an account ?</h5>
-				  	    <input type="button" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto mb-5 btn-round" value="Register">
-				  	</form>
-			</div--><!-- End of col login-->
-		</div><!-- End of login row-->
-	</div><!-- End of login container-->
-	
-	<!--div class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<label id="prod_name"></label>
 			</div>
-		</div>
-	</div-->
-
-	<!--Footer-->
-	<div class="container-fluid p-0 fixed-bottom">
-		<div class="row bg_color">
-			<div class="col-sm-12 text-center"><p>Copyright © 2021. All Rights Reserved By Tulsi Corporation.</p></div>
-		</div>
-	</div>
-
-<script src="lib/js/search.js"></script>
-<script src="lib/js/credentials.js"></script>
-
-</body>
-</html>
+			<!--Framework script-->
+			<script src="lib/js/search.js"></script>
+			<script src="lib/js/credentials.js"></script>
+		</body>
+	</html>

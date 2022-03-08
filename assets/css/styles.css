@@ -70,14 +70,78 @@ body{
 .form_link:hover{text-decoration: underline;}
 .form_hidden{display: none;}
 
+/*Product Page*/
+#prodView{display: none;}
+.callout{width: 100%;height: auto;}
+.callout button{
+    float: right;
+    width: 3%;
+    border-radius: 5px;
+    border: 1px solid #21252924;
+    background-color: #f9f9f9;
+}
 
-
-
-
-
-
-
-
+/*Popup style*/
+.popupmodal {
+    position: fixed;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    /*display: block; */
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    overflow: hidden;
+    outline: 0;
+    /*height: 100%;
+    overflow: hidden;
+    outline: 0;*/
+}
+.popupmodal.active{transform: translate(-50%, 50%) scale(1);}
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+.modal-body{
+    padding: 35px 20px;
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: 200ms ease-in-out;
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+/**/
+/**/
 
 
 .bg_color{background-color: #e2e2e2 !important;}
@@ -176,7 +240,7 @@ body{
     display: inline-block;
     width: 90px;
     height: 114px;
-    border: 1px solid #eee;
+    /*border: 1px solid #eee;*/
 }
 .piclist li img{
     width: 97%;
@@ -236,6 +300,7 @@ section {
     background: #fff;
     padding: 15px;
     border: 1px solid lightgray;
+    border-radius: 10px;
 }
 ._product-detail-content p._p-name {
     color: black;
@@ -250,12 +315,12 @@ section {
     font: normal 300 1.4rem/1.86 "Poppins",sans-serif;
     color: #318234;
 }
-._p-qty > span {
+.p_qty > span {
     color: black;
     margin-right: 15px;
     font-weight: 500;
 }
-._p-qty .value-button {
+.p_qty .value-button {
     display: inline-flex;
     border: 0px solid #ddd;
     margin: 0px;
@@ -273,13 +338,13 @@ section {
     color: #fff;
 }
 
-._p-qty .value-button {
+.p_qty .value-button {
     border: 0px solid #fe0000;
     height: 35px;
     font-size: 20px;
     font-weight: bold;
 }
-._p-qty input#number {
+.p_qty input#number {
     text-align: center;
     border: none;
     border-top: 1px solid #fe0000;
@@ -296,6 +361,8 @@ section {
 }
 .p-list {
     margin-bottom: 10px;
+    font-size: initial;
+    font-weight: bold;
 }
 ._p-features > span {
     display: block;
@@ -375,13 +442,13 @@ section {
 .owl-nav .owl-prev i, .owl-nav .owl-next i {
     left: 0px;
 }
-._p-qty .decrease_ {
+.p_qty .decrease_ {
     position: relative;
     right: -5px;
     top: 3px;
 }
 
-._p-qty .increase_ {
+.p_qty .increase_ {
     position: relative;
     top: 3px;
     left: -5px;
