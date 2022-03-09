@@ -39,77 +39,79 @@
 				</div>
 				<ul id="match-list" name="matchid"></ul>
 			</div><!-- End of Search form -->
-			<!-- Product modal -->
+			<!--Product page-->
+
+			<div class="container-fluid p-5" id="product_layout">
+			   	<div class="row row-sm"><button data-close-button class="close-button">&times;</button>
+			      	<div class="col-md-6 _boxzoom">
+			         	<div class="zoom-thumb">
+			            	<ul class="piclist">
+			               		<li><img src="" alt="product_img"></li>
+			               		<!--li><img src="" alt=""></li>
+			               		<li><img src="" alt=""></li>
+			               		<li><img src="" alt=""></li-->
+			            	</ul>
+			         	</div>
+			         	<!--div class="_product-images">
+			            	<div class="picZoomer">
+			               		<img class="my_img" src="https://s.fotorama.io/1.jpg" alt="">
+			            	</div>
+			         	</div-->
+			     	</div>
+			      	<div class="col-md-6">
+			         	<div class="_product-detail-content"><p class="_p-name"  id="prod_name"></p>
+			            	<div class="_p-price-box">
+			               		<div class="p-list">
+			                  		<span> M.R.P. : </span>
+			                  		<span class="price" id="prod_rate"></span>
+			               		</div>
+			               		<div class="p-list">
+			                  		<span> Quantity : </span>
+			                  		<span class="price" id="prod_quant"></span>
+			               		</div>
+			               		<div class="p-list">
+			                  		<span> M.S.R. : <i class="fa fa-inr"></i></span>
+			                  		<span class="price" id="prod_id"></span>
+			               		</div>
+			               		<div class="_p-add-cart">
+			                  		<div class="p_qty">
+			                     		<span>Add Quantity</span>
+			                     		<div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+			                     		<input type="number" name="qty" id="number" value="1" />
+			                     		<div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+			                  		</div>
+			               		</div>					               
+			               		<form action="" method="post" accept-charset="utf-8">
+			                  		<ul class="spe_ul"></ul>
+			                  		<div class="_p-qty-and-cart">
+			                     		<div class="_p-add-cart">
+			                        		<button class="btn-theme btn buy-btn" tabindex="0">
+			                        			<i class="fa fa-shopping-cart"></i> Buy Now
+			                        		</button>
+			                        		<button class="btn-theme btn btn-success" tabindex="0">
+			                       	 			<i class="fa fa-shopping-cart"></i> Add to Cart
+			                        		</button>
+			                        		<input type="hidden" name="pid" value="18" />
+			                        		<input type="hidden" name="price" value="850" />
+			                        		<input type="hidden" name="url" value="" />    
+			                     		</div>
+			                  		</div>
+			               		</form>
+			            	</div>
+			         	</div>
+			      	</div>
+			   	</div>
+			</div><!--End of product page container-->
+			<!-- Product modal>
 			<div class="popupmodal hide" id="modal">
 				<div class="modal-header">
 					<div class="title"><h4 class="mb-0" id="prod_name"></h4></div>
 					<button data-close-button class="close-button">&times;</button>
 				</div>
 				<div class="modal-body">
-					<div class="container-fluid">
-					   	<div class="row row-sm">
-					      	<div class="col-md-6 _boxzoom">
-					         	<div class="zoom-thumb">
-					            	<ul class="piclist">
-					               		<li><img src="" alt="product_img"></li>
-					               		<!--li><img src="" alt=""></li>
-					               		<li><img src="" alt=""></li>
-					               		<li><img src="" alt=""></li-->
-					            	</ul>
-					         	</div>
-					         	<!--div class="_product-images">
-					            	<div class="picZoomer">
-					               		<img class="my_img" src="https://s.fotorama.io/1.jpg" alt="">
-					            	</div>
-					         	</div-->
-					     	</div>
-					      	<div class="col-md-6">
-					         	<div class="_product-detail-content">
-					            	<div class="_p-price-box">
-					               		<div class="p-list">
-					                  		<span> M.R.P. : </span>
-					                  		<span class="price" id="prod_rate"></span>
-					               		</div>
-					               		<div class="p-list">
-					                  		<span> Quantity : </span>
-					                  		<span class="price" id="prod_quant"></span>
-					               		</div>
-					               		<div class="p-list">
-					                  		<span> M.S.R. : <i class="fa fa-inr"></i></span>
-					                  		<span class="price" id="prod_id"></span>
-					               		</div>
-					               		<div class="_p-add-cart">
-					                  		<div class="p_qty">
-					                     		<span>Add Quantity</span>
-					                     		<div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-					                     		<input type="number" name="qty" id="number" value="1" />
-					                     		<div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-					                  		</div>
-					               		</div>					               
-					               		<form action="" method="post" accept-charset="utf-8">
-					                  		<ul class="spe_ul"></ul>
-					                  		<div class="_p-qty-and-cart">
-					                     		<div class="_p-add-cart">
-					                        		<button class="btn-theme btn buy-btn" tabindex="0">
-					                        			<i class="fa fa-shopping-cart"></i> Buy Now
-					                        		</button>
-					                        		<button class="btn-theme btn btn-success" tabindex="0">
-					                       	 			<i class="fa fa-shopping-cart"></i> Add to Cart
-					                        		</button>
-					                        		<input type="hidden" name="pid" value="18" />
-					                        		<input type="hidden" name="price" value="850" />
-					                        		<input type="hidden" name="url" value="" />    
-					                     		</div>
-					                  		</div>
-					               		</form>
-					            	</div>
-					         	</div>
-					      	</div>
-					   	</div>
-					</div>
-				</div><!--End of modal body-->
-			</div><!--End of popupmodal-->
-			<div id="overlay"></div>
+				</div><!--End of modal body>
+			</div><!--End of popupmodal>
+			<div id="overlay"></div-->
 
 			<!-- Start of signIn/Up container-->
 			<div class="container signInUp" id="viewhide">

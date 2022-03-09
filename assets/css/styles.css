@@ -72,6 +72,19 @@ body{
 
 /*Product Page*/
 #prodView{display: none;}
+.close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+    height: fit-content;
+    position: absolute;
+    right: 0%;
+    top: 165px;
+    left: 95%;
+}
 .callout{width: 100%;height: auto;}
 .callout button{
     float: right;
@@ -296,6 +309,7 @@ section {
 }
 
 /*======products-details=====*/
+#product_layout{display: none;}
 ._product-detail-content {
     background: #fff;
     padding: 15px;
@@ -381,7 +395,7 @@ section {
     border-radius: 52px;
 }
 ._p-add-cart .btn {
-    margin: 0px 8px;
+    margin: 5px 8px;
 }
 
 /*=========Recent-post==========*/
