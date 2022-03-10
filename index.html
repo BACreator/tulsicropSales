@@ -20,18 +20,56 @@
     		<link rel="stylesheet" href="assets/css/skins/skin-demo-2.css">
     		<link rel="stylesheet" href="assets/css/demos/demo-2.css">
 
+    		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     		
     		<link rel="stylesheet" href="assets/css/styles.css">
 		</head>
 		<body>
 			<!--Header Layout-->
-			<div class="container-fluid p-0">
+			<!--div class="container-fluid p-0">
 				<div class="bg_color header_title p-3">
 					<h3>Tulsi Corporation</h3>
 					<span><b>Working towards healthier world</b></span>
+					<div>
+						<span><i class="bi bi-cart">&#xF242;</i></span>
+					</div>
 				</div>
-			</div><!--End of header-->
+				
+			</div--><!--End of header-->
+			<div>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light nav_header">
+				  	<a class="navbar-brand" href="index.html">Tulsi Corporation</a>
+				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  	</button>
+				  	<div class="collapse navbar-collapse" id="navbarText">
+				    	<ul class="navbar-nav mr-auto">
+				      		<li class="nav-item active">
+				        		<a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#"></a>
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#"></a>
+				      		</li>
+				    	</ul>
+				    	<span class="navbar-text cart">
+				    		<button type="button" id="cart_btn">
+				    			<i class="bi bi-cart"></i>
+				    			<span id="cart_count_info">0</span>
+				    		</button>
+				    	</span>
+				    	<span class="navbar-text"><i class="bi-person"></i></span>
+				  	</div>
+				</nav>
+			</div>
 			<!-- Search form -->
 			<div class="container">
 				<div class="active-pink-4 mb-2 mt-4">
@@ -72,6 +110,18 @@
 			               		<div class="p-list">
 			                  		<span> M.S.R. : <i class="fa fa-inr"></i></span>
 			                  		<span class="price" id="prod_id"></span>
+			               		</div>
+			               		<div class="p-list">
+			                  		<span> UnitPk : <i class="fa fa-inr"></i></span>
+			                  		<span class="price" id="prod_unitPk"></span>
+			               		</div>
+			               		<div class="p-list">
+			                  		<span> SchemeRange : <i class="fa fa-inr"></i></span>
+			                  		<span class="price" id="prod_schemeRange"></span>
+			               		</div>
+			               		<div class="p-list">
+			                  		<span> SchemeOffeQty : <i class="fa fa-inr"></i></span>
+			                  		<span class="price" id="prod_schemeOffQty"></span>
 			               		</div>
 			               		<div class="_p-add-cart">
 			                  		<div class="p_qty">
