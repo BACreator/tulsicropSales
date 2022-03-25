@@ -262,6 +262,7 @@ section {
 
 /*======products-details=====*/
 #product_layout{display: none;}
+#search_layout{display: block;}
 ._product-detail-content {
     background: #fff;
     padding: 15px;
@@ -486,7 +487,7 @@ section {
     color: #fd7f34;
 }
 
-/*CART PAGE CSS*/
+/*CART PAGE CSS
 .mt-100 {
     margin-top: 100px
 }
@@ -518,7 +519,7 @@ section {
 .card .card-body {
     padding: 30px;
     background-color: transparent
-}
+}*/
 
 /*HEARDER CART ICON CSS*/
 .cart{justify-content: flex-end;padding-right: 8px;}
@@ -548,7 +549,81 @@ section {
     justify-content: center;
     font-weight: 600;
 }
+/*CART LAYOUT DESIGN*/
+tr{text-align: center;}
+th{
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+}
+#removeFromCart{cursor: pointer;}
+#cart_button button{
+    font-size: small;
+    width: -webkit-fill-available;
+}
 
+/*CART LAYOUT DESIGN
+.cart_container{
+    position: absolute;
+    overflow-y: scroll;
+    width: 100%;
+    height: 600px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.21);
+    display: none ;
+}
+
+.cart_container::-webkit-scrollbar{width: 8px;}
+.cart_container::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;    
+}
+.show-cart_container{display: block;}
+.cart_item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+    align-items: center;
+    position: relative;
+    padding: 1.2rem 0.6rem;
+    height: 140px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+}
+.cart_item:last-child{border-bottom:none;}
+.cart_item_del_btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 0.05rem 0.45rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;    
+}
+.cart_item_info{text-align: center;}
+.cart_item_info span{display: block;}
+.cart_total{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cart_total h3{
+    margin-right: 0.2rem;
+    font-size: 1.3rem;
+}
+#cart_total_value{
+    font-size: 1.3rem;
+    font-weight: 500;
+}*/
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
