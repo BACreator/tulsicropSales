@@ -556,6 +556,7 @@ th{
     font-size: 1.5rem !important;
 }
 #removeFromCart{cursor: pointer;}
+#cart_button{display: none;}
 #cart_button button{
     font-size: small;
     width: -webkit-fill-available;

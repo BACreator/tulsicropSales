@@ -74,10 +74,7 @@
 				<div class="cart_list">Cart list</div>
 			</div-->
 			
-			<div class="container-fluid">
-				<div id="table" class=" mb-2 mt-4"></div>
-				<div id="cart_button"></div>
-			</div>
+			
 			
 			<!-- Search form -->
 			<div class="container" id="search_layout">
@@ -87,9 +84,6 @@
 				<ul id="match-list" name="matchid"></ul>
 			</div><!-- End of Search form -->
 			<!--Product page-->
-			<div id="emptyCart">Cart is empty. Please shop.</div>
-			<div id="addedCart">Item added to cart.</div>
-
 			<div class="container-fluid p-5" id="product_layout">
 			      	<!--div class="col-md-6 _boxzoom">
 			         	<div class="zoom-thumb">
@@ -163,6 +157,16 @@
 			      	</div>
 			   	</div>
 			</div><!--End of product page container-->
+			<!--Cart Layout-->			
+			<div id="emptyCart">Cart is empty. Please shop.</div>
+			<div id="addedCart">Item added to cart.</div>
+			<div class="container-fluid">
+				<div id="table" class=" mb-2 mt-4"></div>
+				<div id="cart_button">
+					<button class="btn btn-warning mb-2 mt-" id=" shopBtn" onclick="continueShopping()">Continue Shopping</button>
+					<button class="btn btn-success mb-2 mt-" id="checkBtn" onclick="checkOut()">Check Out</button>
+				</div>
+			</div>
 			<!-- Product modal>
 			<div class="popupmodal hide" id="modal">
 				<div class="modal-header">
