@@ -108,10 +108,10 @@
 			                  		<span> M.R.P. : </span>
 			                  		<span class="price" id="prod_rate"></span>
 			               		</div>
-			               		<!--div class="p-list">
+			               		<div class="p-list">
 			                  		<span> Quantity : </span>
 			                  		<span class="price" id="prod_quant"></span>
-			               		</div-->
+			               		</div>
 			               		<div class="p-list">
 			                  		<span> MFR : <i class="fa fa-inr"></i></span>
 			                  		<span class="price" id="prod_id"></span>
@@ -202,23 +202,23 @@
 						<p class="form_text"><a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create account.</a></p>
 					</form>
 					<!--SignUp Form Layout-->
-					<form action="connect.php" method="post" class="form signInUpForm form_hidden" id="createAccount">
+					<form action="connect.php" method="POST" class="form signInUpForm form_hidden" id="createAccount">
 						<h4 class="form_title">Create Account</h4>
 						<div class="form_message form_message_error"></div>
 						<div class="form_input_group">
-							<input type="text" class="form_input" id="signupUsername" placeholder="Username" name="username" autofocus>
+							<input type="text" class="form_input" id="signupUsername" placeholder="Username" name="username" required autofocus>
 							<div class="form_input_error_message"></div>
 						</div>
 						<div class="form_input_group">
-							<input type="text" class="form_input" placeholder="Email Address" name="email" autofocus>
+							<input type="text" class="form_input" placeholder="Email Address" name="email" required autofocus>
 							<div class="form_input_error_message"></div>
 						</div>
 						<div class="form_input_group">
-							<input type="password" class="form_input" id="signuppassword" placeholder="Password" name="password" autofocus>
+							<input type="password" class="form_input" id="signuppassword" placeholder="Password" required name="password" autofocus>
 							<div class="form_input_error_message"></div>
 						</div>
 						<div class="form_input_group">
-							<input type="password" class="form_input" placeholder="Confirm password" autofocus>
+							<input type="password" class="form_input" placeholder="Confirm password" required autofocus>
 							<div class="form_input_error_message"></div>
 						</div>
 						<button class="form_button" name="submit" type="submit">Continue</button>
