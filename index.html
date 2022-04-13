@@ -108,10 +108,10 @@
 			                  		<span> M.R.P. : </span>
 			                  		<span class="price" id="prod_rate"></span>
 			               		</div>
-			               		<div class="p-list">
+			               		<!--div class="p-list">
 			                  		<span> Quantity : </span>
 			                  		<span class="price" id="prod_quant"></span>
-			               		</div>
+			               		</div-->
 			               		<div class="p-list">
 			                  		<span> M.F.R : <i class="fa fa-inr"></i></span>
 			                  		<span class="price" id="prod_id"></span>
@@ -141,7 +141,10 @@
 			                  		</div>
 			               		</div>		
 			               		<div>
-			               			<button class="btn btn-success" id="add_cart">Add to Cart</button>
+			               			<form method="post" action="connect.php">
+			               				<input class="btn btn-success" id="add_cart" type="button" name="" value="Add to Cart">
+			               			</form>
+			               			<!--button class="btn btn-success" id="add_cart">Add to Cart</button-->
 			               		</div>			               
 			               		<!--form action="" method="post" accept-charset="utf-8">
 			                  		<ul class="spe_ul"></ul>
@@ -202,7 +205,7 @@
 						<p class="form_text"><a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create account.</a></p>
 					</form>
 					<!--SignUp Form Layout-->
-					<form action="connect.php" method="POST" class="form signInUpForm form_hidden" id="createAccount">
+					<form class="form signInUpForm form_hidden" id="createAccount">
 						<h4 class="form_title">Create Account</h4>
 						<div class="form_message form_message_error"></div>
 						<div class="form_input_group">
