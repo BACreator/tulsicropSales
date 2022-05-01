@@ -1,0 +1,9 @@
+{
+  "clientId": "1234",
+  "systemId": "2010",
+  "orderReferenceNo": "42344345",
+  "responseCode": "0000",
+  "responseDescription": "Customer Login Successful!",
+  "repName": null,
+  "repCode": "17"
+}
