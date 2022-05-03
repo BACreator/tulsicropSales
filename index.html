@@ -167,9 +167,20 @@
 			<!--Cart Layout-->			
 			<div id="emptyCart">Cart is empty. Please shop.</div>
 			<div id="addedCart">Item added to cart.</div>
+			<div id="duplicate">Item already exists in the cart.</div>
 			<div class="container-fluid">
 				<div id="table" class=" mb-2 mt-4"></div>
 				<div id="cart_button">
+					<div class="container" id="search_layout">
+						<div class="active-pink-4 mb-2 mt-4">
+						  <input class="form-control form_search" type="text" placeholder="Search Expiry" aria-label="Search" id="" value="" autocomplete="off" onfocus="this.value=''">
+						</div>
+						<ul id="" name="matchid"></ul>
+					</div><!-- End of Search form -->
+
+				<div>
+					<button onclick="cartTotal()">Total</button>
+				</div>
 					<button class="btn btn-warning mb-2 mt-" id="shopBtn" onclick="continueShopping()">Continue Shopping</button>
 					<button class="btn btn-success mb-2 mt-" id="checkBtn" onclick="checkOut()">Check Out</button>
 				</div>
@@ -193,16 +204,16 @@
 						<h4 class="form_title">Login</h4>
 						<div class="form_message form_message_error"></div>
 						<div class="form_input_group">
-							<input type="text" class="form_input" placeholder="Username or email" autofocus>
+							<input type="text" class="form_input" id="loginusername" placeholder="Username or email" autofocus>
 							<div class="form_input_error_message"></div>
 						</div>
 						<div class="form_input_group">
-							<input type="password" class="form_input" placeholder="Password" autofocus>
+							<input type="password" class="form_input" id="loginpassword" placeholder="Password" autofocus>
 							<div class="form_input_error_message"></div>
 						</div>
-						<button class="form_button" type="submit">Continue</button>
+						<button class="form_button" id="logincontinue" type="submit">Continue</button>
 						<p class="form_text"><a href="#" class="form_link">Forgot your password?</a></p>
-						<p class="form_text"><a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create account.</a></p>
+						<p class="form_text"><a class="form_link" href="#" id="linkCreateAccount">Don't have an account? Create account.</a></p>
 					</form>
 					<!--SignUp Form Layout-->
 					<form class="form signInUpForm form_hidden" id="createAccount">
