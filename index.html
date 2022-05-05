@@ -17,8 +17,8 @@
 
     		<!-- Main CSS File -->
     		<link rel="stylesheet" href="assets/css/style.css">
-    		<link rel="stylesheet" href="assets/css/skins/skin-demo-2.css">
-    		<link rel="stylesheet" href="assets/css/demos/demo-2.css">
+    		<!--link rel="stylesheet" href="assets/css/skins/skin-demo-2.css">
+    		<link rel="stylesheet" href="assets/css/demos/demo-2.css"-->
 
     		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -44,7 +44,7 @@
 			</div--><!--End of header-->
 			<div>
 				<nav class="navbar navbar-expand-lg navbar-light bg-light nav_header">
-				  	<a class="navbar-brand" href="index.html">Tulsi Corporation</a>
+				  	<a class="navbar-brand" href="#">Tulsi Corporation</a>
 				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  	</button>
@@ -60,13 +60,37 @@
 				        		<a class="nav-link" href="#"></a>
 				      		</li>
 				    	</ul>
+				    	<!-- Button trigger modal -->
+				    	<button type="button" class="btn bg-light" data-toggle="modal" data-target="#exampleModalCenter" id="navlogout">
+				    	  Login
+				    	</button>
 				    	<span class="navbar-text cart">
 				    		<button type="button" id="cart_btn">
 				    			<i class="bi bi-cart"></i>
 				    			<!--span id="cart_count_info">0</span-->
 				    		</button>
 				    	</span>
-				    	<span class="navbar-text"><i class="bi-person"></i></span>
+
+				    	<!-- Modal -->
+				    	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				    	  <div class="modal-dialog modal-dialog-centered" role="document">
+				    	    <div class="modal-content">
+				    	      <div class="modal-header">
+				    	        <h5 class="modal-title" id="exampleModalLongTitle">Confirm Logout</h5>
+				    	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				    	          <span aria-hidden="true">&times;</span>
+				    	        </button>
+				    	      </div>
+				    	      <div class="modal-body p-4">
+				    	        <h6>Are you sure you want to Logout?</h6>
+				    	      </div>
+				    	      <div class="modal-footer d-block p-4">
+				    	        <button type="button" class="btn btn-primary float-right logoutfooterpri" id="logoutuser">Logout</button>
+				    	        <button type="button" class="btn btn-secondary logoutfootersec" data-dismiss="modal">Close</button>
+				    	      </div>
+				    	    </div>
+				    	  </div>
+				    	</div><!--End of modal-->
 				  	</div>
 				</nav>
 			</div>
@@ -200,12 +224,12 @@
 			<div class="container signInUp" id="viewhide">
 				<div class="row">
 					<!--SignIn Form Layout-->
-					<form class="form signInUpForm" id="login">
+					<form class="form signInUpForm needs-validation" id="login" novalidate>
 						<h4 class="form_title">Login</h4>
 						<div class="form_message form_message_error"></div>
 						<div class="form_input_group">
-							<input type="text" class="form_input" id="loginusername" placeholder="Username or email" autofocus>
-							<div class="form_input_error_message"></div>
+							<input type="text" class="form_input" id="loginusername" placeholder="Username" autocomplete="off" autofocus>
+							<div class="invalid-tooltip"></div>
 						</div>
 						<div class="form_input_group">
 							<input type="password" class="form_input" id="loginpassword" placeholder="Password" autofocus>
@@ -240,8 +264,8 @@
 					</form>
 				</div><!-- End of signIn/Up row-->
 			</div><!-- End of signIn/Up container-->
-
-
+			
+				    	<div id="overlay"></div>
 			<!--Footer Layout-->
 			<!--div class="container-fluid p-0">
 				<div class="bg_color">
