@@ -195,11 +195,15 @@
 			<div class="container-fluid">
 				<div id="table" class=" mb-2 mt-4"></div>
 				<div id="cart_button">
-					<div class="container" id="search_layout">
-						<div class="active-pink-4 mb-2 mt-4">
-						  <input class="form-control form_search" type="text" placeholder="Search Expiry" aria-label="Search" id="" value="" autocomplete="off" onfocus="this.value=''">
+					<div class="container-fluid p-0 mt-3 mb-3">
+						<div class="dropdown">
+						  <button type="button" class="btn btn-primary dropdown-toggle"  id="expirydetails" data-toggle="dropdown">
+						    Expiry Details
+						  </button>
+						  <div class="dropdown-menu expiryMenu">
+						    <a class="dropdown-item" href="#" id="expirylist"></a>
+						  </div>
 						</div>
-						<ul id="" name="matchid"></ul>
 					</div><!-- End of Search form -->
 
 				<div>

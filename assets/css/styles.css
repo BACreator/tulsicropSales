@@ -712,6 +712,18 @@ th{
     font-size: 1.3rem;
     font-weight: 500;
 }*/
+.expiryMenu{
+    max-height: 250px;
+    overflow: auto;
+    top: 36px !important;
+    left: 50% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-50%, 0) !important;
+}
+
+
+}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
