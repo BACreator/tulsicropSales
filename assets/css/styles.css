@@ -22,7 +22,12 @@
     border-radius: 5px;
     background-color: white;
 }
-
+.slide_item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
 @supports (display: grid) {
     .cards {
         margin: 0;
@@ -788,6 +793,12 @@ th{
 }
 .logoutfootersec{ margin-left: 57px !important;}
 
+}
+.modal-footer button{
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 20%;
 }
 @media only screen and (min-width : 375px) {
 .close-button{
