@@ -22,12 +22,7 @@
     border-radius: 5px;
     background-color: white;
 }
-.slide_item{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
+
 @supports (display: grid) {
     .cards {
         margin: 0;
@@ -778,7 +773,7 @@ th{
 }
 
 
-}
+
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
@@ -793,13 +788,21 @@ th{
 }
 .logoutfootersec{ margin-left: 57px !important;}
 
-}
 .modal-footer button{
     width: 100px;
     position: relative;
     top: 50%;
     left: 20%;
 }
+.slide_item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+}
+
 @media only screen and (min-width : 375px) {
 .close-button{
     right: 0%;
@@ -811,8 +814,15 @@ th{
     margin-bottom: 5px;
 }
 .logoutfootersec{ margin-left: 82px !important;}
+.slide_item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 68%;
+}
 
 }
+
 @media only screen and (min-width : 425px) {
 .close-button{
     right: 0%;
@@ -824,8 +834,15 @@ th{
     margin-bottom: 5px;
 }
 .logoutfootersec{ margin-left: 109px !important;}
+.slide_item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
 
 }
+
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
@@ -839,9 +856,15 @@ th{
     margin-bottom: 5px;
 }
 .logoutfootersec{ margin-left: 57px !important;}
+.slide_item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
 
 }
-}
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
@@ -855,6 +878,13 @@ th{
     margin-bottom: 5px;
 }
 .logoutfootersec{ margin-left: 57px !important;}
+
+.slide_item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
 
 }
 
@@ -873,6 +903,13 @@ th{
 }
 .logoutfootersec{ margin-left: 57px !important;}
 
+.slide_item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 }
 }
 
@@ -882,5 +919,12 @@ th{
     right: 0%;
     top: 0px;
     left: 95%;
+}
+
+.slide_item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 }
