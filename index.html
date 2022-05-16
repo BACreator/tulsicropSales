@@ -44,7 +44,7 @@
 			</div--><!--End of header-->
 			<div>
 				<nav class="navbar navbar-expand-lg navbar-light bg-light nav_header">
-				  	<a class="navbar-brand" href="#">Tulsi Corporation</a>
+				  	<a class="navbar-brand" href="index.html">Tulsi Corporation</a>
 				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  	</button>
@@ -61,13 +61,22 @@
 				      		</li>
 				    	</ul>
 				    	<!-- Button trigger modal -->
-				    	<button type="button" class="btn bg-light" data-toggle="modal" data-target="#exampleModalCenter" id="navlogout">
-				    	  Login
-				    	</button>
+				    	
 				    	<span class="navbar-text cart">
-				    		<button type="button" id="cart_btn">
+				    		<button type="button" id="cart_btn" data-toggle="collapse"data-target=".navbar-collapse.show">
 				    			<i class="bi bi-cart"></i>
 				    			<!--span id="cart_count_info">0</span-->
+				    		</button>
+				    	</span>
+				    	<span class="navbar-text cart">
+				    		<button type="button" id="loginNav" data-toggle="collapse"data-target=".navbar-collapse.show">
+				    			<i class="bi bi-person"></i>
+				    		</button>
+				    	</span>
+
+				    	<span class="navbar-text cart">
+				    		<button type="button" data-toggle="modal" data-target="#exampleModalCenter">
+				    			<i id="navlogout"></i>
 				    		</button>
 				    	</span>
 
@@ -155,6 +164,10 @@
 			               		<div class="p-list">
 			                  		<span> SchemeOffeQty : <i class="fa fa-inr"></i></span>
 			                  		<span class="price" id="prod_schemeOffQty"></span>
+			               		</div>
+			               		<div class="p-list">
+			                  		<span> Free Qunantity : <i class="fa fa-inr"></i></span>
+			                  		<span class="price" id="prod_freeQty"></span>
 			               		</div></div>
 			               		<div class="_p-add-cart">
 			                  		<div class="p_qty">
@@ -193,21 +206,31 @@
 			<div id="addedCart">Item added to cart.</div>
 			<div id="duplicate">Item already exists in the cart.</div>
 			<div class="container-fluid">
+				<h4 id="prodTotalTable"></h4>
 				<div id="table" class=" mb-2 mt-4"></div>
+
+
+				<div class="container">
+				  <main class="cards">
+				                  <div id="test12"></div>
+				              </main>
+				</div>
+
+
 				<div id="cart_button">
+					<h4 id="prodTotal" style="float: right;"></h4>
 					<div class="container-fluid p-0 mt-3 mb-3">
 						<div class="dropdown">
 						  <button type="button" class="btn btn-primary dropdown-toggle"  id="expirydetails" data-toggle="dropdown">
 						    Expiry Details
 						  </button>
 						  <div class="dropdown-menu expiryMenu">
-						    <a class="dropdown-item" href="#" id="expirylist"></a>
+						    <a class="dropdown-item expiry" href="#" id="expirylist"></a>
 						  </div>
 						</div>
 					</div><!-- End of Search form -->
 
 				<div>
-					<button onclick="cartTotal()">Total</button>
 				</div>
 					<button class="btn btn-warning mb-2 mt-" id="shopBtn" onclick="continueShopping()">Continue Shopping</button>
 					<button class="btn btn-success mb-2 mt-" id="checkBtn" onclick="checkOut()">Check Out</button>
@@ -268,6 +291,211 @@
 					</form>
 				</div><!-- End of signIn/Up row-->
 			</div><!-- End of signIn/Up container-->
+
+			<!--Carousel-->
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">FLAGYL 200MG TAB</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001017</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 15s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 8.16/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">MILCAPS TABS</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0141047</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 18.57/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">GARDINAL 30MG TAB</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001025</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 30s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 28.73/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">NEBASULF POWDER</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001204</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10gm</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 42.5/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			    </div>
+			    <div class="carousel-item">
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">PHENERGAN 25 TABS</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001049</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 27.06/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">AMICOLON CAPS</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001194</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 163.21/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">MECOBA ALFA CAPS</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001072</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 61.13/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">ROVAMYCIN FORTE</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001084</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 339.57/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			    </div>
+			    <div class="carousel-item">
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">OXMAZETOL 150 TABS</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001092</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 42.79/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">ELOCON LOTION</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001111</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 5ml</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 91.43/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">NERVUPTIN TABS</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001131</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 91.86/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			     	<div class="col-md-3" style="float:left">
+			     	    <div class="card mb-2">
+			     	        <!--img class="card-img-top"
+			     	            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap"-->
+			     	        <div class="card-body">
+			     	            <h4 class="card-title">TGGOAL TABS</h4>
+			     	            <p class="card-text">
+			     	            	<span>Manufacturer code : 0001156</span><br>
+			     	            	<span>Item Type : NT</span><br>
+			     	            	<span>UnitPk Value : 10s</span><br>
+			     	            </p><br>
+			     	            <a class="btn btn-success">Rate : 43.96/-</a>
+			     	        </div>
+			     	    </div>
+			     	</div>
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div><!--End of Carousel-->
+
+
+
+
+
 			
 				    	<div id="overlay"></div>
 			<!--Footer Layout-->

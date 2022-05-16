@@ -1,5 +1,53 @@
 /**/
 /**/
+#cartClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 8px;
+}
+.cartSpan{
+    font-weight: bold;
+}
+.cards {
+    margin: -1rem;
+}
+
+.card {
+    width: 220px;
+    float: left;
+    margin: 1rem;
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+@supports (display: grid) {
+    .cards {
+        margin: 0;
+    }
+
+    .cards {
+        display: grid;
+        /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+        grid-gap: 1rem;
+    }
+
+
+}
+
+
+#prodTotalTable{
+        top: 70px;
+        right: 0px;
+        position: absolute;
+        margin-right: 15px;
+    }
+.expiry li{
+    margin-top: 10px;
+    border:1px solid grey;
+}
 body{
     --color-primary:#009579;
     --color-primary-dark:#007f67;
@@ -19,12 +67,14 @@ body{
     /*margin-right: 15px;*/
     cursor: pointer;
 }
-#navlogout{
-    display: block;
-}
+/*#navlogout{
+    display: none;
+}*/
+#loginNav{border: none;}
 
 
 /*SIGN_IN_UP CSS*/
+#viewhide{display: none;}
 .signInUp{
 
     display: flex;
@@ -98,7 +148,7 @@ body{
 
 /**/
 /**/
-
+.card-body a{color: #fff !important;}
 
 .bg_color{background-color: #e2e2e2 !important;}
 .form_search{
