@@ -70,11 +70,13 @@
 				    	</span>
 				    	<span class="navbar-text cart">
 				    		<button type="button" id="loginNav" data-toggle="collapse"data-target=".navbar-collapse.show">
-				    			<i class="bi bi-person"></i>
+				    			<div class="text-center">
+				  <a href="" class="btn btn-default btn-rounded navlogin" data-toggle="modal" data-target="#modalLoginForm"><i class="bi bi-person"></i></a>
+				</div>
 				    		</button>
 				    	</span>
 
-				    	<span class="navbar-text cart" data-toggle="modal" data-target="#exampleModalCenter"><i id="navlogout"></i></span>
+				    	<span class="navbar-text cart" data-toggle="modal" data-target="#exampleModalCenter"><i id="navlogout" required></i></span>
 
 				    	<!-- Modal -->
 				    	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -199,11 +201,14 @@
 			</div><!--End of product page container-->
 			<!--Cart Layout-->			
 			<div id="emptyCart">Cart is empty. Please shop.</div>
+			<div id="loginSuccess">Logged in Successfully...!</div>
 			<div id="orderSuccess">Order submitted Successfully!</div>
-			<div id="orderFail">Order Failed...!</div>
+			<div id="orderFail">Please select all required field...!</div>
+			<div id="orderLogin">Please Login for submitting your order...!</div>
+			<div id="orderExpiry">Please select expiry details for submitting your order...!</div>
 			<div id="addedCart">Item added to cart.</div>
 			<div id="duplicate">Item already exists in the cart.</div>
-			<div class="container-fluid">
+			<div class="container-fluid cart_container">
 				<h4 id="prodTotalTable"></h4>
 				<div id="table" class=" mb-2 mt-4"></div>
 
@@ -245,10 +250,101 @@
 			</div><!--End of popupmodal>
 			<div id="overlay"></div-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+				  aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header text-center">
+				        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body mx-3 p-5">
+				        <div class="md-form mb-1">
+				          <i class="fas fa-envelope prefix grey-text"></i>
+				          <input type="email" id="defaultForm-user" class="form-control validate" autocomplete="off" autofocus="">
+				          <label data-error="wrong" data-success="right" for="defaultForm-user">Your email</label>
+				        </div>
+
+				        <div class="md-form mb-1">
+				          <i class="fas fa-lock prefix grey-text"></i>
+				          <input type="password" id="defaultForm-pass" class="form-control validate" autocomplete="off">
+				          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+				        </div>
+
+				      </div>
+				      <div class="modal-footer d-flex justify-content-center">
+				        <button class="btn btn-default close" id="logincontinue"data-dismiss="modal" aria-label="Close">Login</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!--div class="text-center">
+				  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
+				    Modal Login Form</a>
+				</div-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<!-- Start of signIn/Up container-->
-			<div class="container signInUp" id="viewhide">
+			<!--div class="container signInUp" id="viewhide">
 				<div class="row">
-					<!--SignIn Form Layout-->
+					<!--SignIn Form Layout>
 					<form class="form signInUpForm needs-validation" id="login" novalidate>
 						<h4 class="form_title">Login</h4>
 						<div class="form_message form_message_error"></div>
@@ -264,7 +360,7 @@
 						<p class="form_text"><a href="#" class="form_link">Forgot your password?</a></p>
 						<p class="form_text"><a class="form_link" href="#" id="linkCreateAccount">Don't have an account? Create account.</a></p>
 					</form>
-					<!--SignUp Form Layout-->
+					<SignUp Form Layout>
 					<form class="form signInUpForm form_hidden" id="createAccount">
 						<h4 class="form_title">Create Account</h4>
 						<div class="form_message form_message_error"></div>
@@ -287,8 +383,8 @@
 						<button class="form_button" name="submit" type="submit">Continue</button>
 						<p class="form_text"><a class="form_link" href="./" id="linklogin">Already have an account? Sign in.</a></p>
 					</form>
-				</div><!-- End of signIn/Up row-->
-			</div><!-- End of signIn/Up container-->
+				</div><!-- End of signIn/Up row>
+			</div--><!-- End of signIn/Up container-->
 
 			<!--Carousel-->
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
