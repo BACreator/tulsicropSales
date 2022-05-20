@@ -1,0 +1,71 @@
+{
+  "clientId": "1234",
+  "systemId": "2010",
+  "orderReferenceNo": "14344",
+  "responseCode": "0000",
+  "responseDescription": "Items successfully retrieved!",
+  "cust": [
+    {
+      "custId": "1",
+      "custIdName": "Aavikova Pharmacy",
+      "custPhone": "(080) 23148412",
+      "custPin": "560040"
+    },
+     {
+      "custId": "2",
+      "custIdName": "Aditya pharma",
+      "custPhone": "(080) 65971031",
+      "custPin": "560064"
+    },
+     {
+      "custId": "3",
+      "custIdName": "Balaji Pharma",
+      "custPhone": "(080) 22960465",
+      "custPin": "560032"
+    },
+     {
+      "custId": "4",
+      "custIdName": "Bangalore Medicals",
+      "custPhone": "(080) 66534778",
+      "custPin": "560052"
+    },
+     {
+      "custId": "5",
+      "custIdName": "Deepa Nursing Home",
+      "custPhone": "(080)  25400841",
+      "custPin": "560037"
+    },
+     {
+      "custId": "6",
+      "custIdName": "Ganesh Medicals",
+      "custPhone": "(080) 23377544",
+      "custPin": "560010"
+    },
+     {
+      "custId": "7",
+      "custIdName": "Gold Finch Hospital",
+      "custPhone": "(080)  23620906",
+      "custPin": "560092"
+    },
+
+     {
+      "custId": "8",
+      "custIdName": "Indian Medicals",
+      "custPhone": "(080) 23148231",
+      "custPin": "560041"
+    },
+
+     {
+      "custId": "9",
+      "custIdName": "Karnataka Medicals",
+      "custPhone": "(080) 23148543",
+      "custPin": "560060"
+    },
+
+     {
+      "custId": "10",
+      "custIdName": "Laxmi Medical Centre",
+      "custPhone": "(080) 2314234",
+      "custPin": "560090"
+    },
+  ]
