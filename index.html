@@ -68,7 +68,7 @@
 				    			<!--span id="cart_count_info">0</span-->
 				    		</button>
 				    	</span>
-				    	<!--span class="navbar-text cart">
+				    	<span class="navbar-text cart">
 				    		<button type="button" id="loginNav" data-toggle="collapse"data-target=".navbar-collapse.show">
 				    			<div class="text-center">
 				  <a href="" class="btn btn-default btn-rounded navlogin" data-toggle="modal" data-target="#modalLoginForm"><i class="bi bi-person"></i></a>
@@ -76,7 +76,7 @@
 				    		</button>
 				    	</span>
 
-				    	<span class="navbar-text cart" data-toggle="modal" data-target="#exampleModalCenter"><i id="navlogout" required></i></span-->
+				    	<!--span class="navbar-text cart" data-toggle="modal" data-target="#exampleModalCenter"><i id="navlogout" required></i></span-->
 
 				    	<!-- Modal -->
 				    	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -107,11 +107,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<button type="button" class="float-right mt-1" id="loginNav" data-toggle="collapse"data-target=".navbar-collapse.show">
+						<!--button type="button" class="float-right mt-1" id="loginNav" data-toggle="collapse"data-target=".navbar-collapse.show">
 			    			<div class="text-center">
 			  					<a href="" class="btn btn-default btn-rounded navlogin" data-toggle="modal" data-target="#modalLoginForm"><i class="bi bi-person"></i></a>
 							</div>
-			    		</button>
+			    		</button-->
 			    		<span class="navbar-text cart float-right mt-1 " data-toggle="modal" data-target="#exampleModalCenter"><i id="navlogout" required></i></span>
 					</div>
 				</div>
@@ -218,7 +218,7 @@
 			<div id="loginSuccess">Logged in Successfully...!</div>
 			<div id="orderSuccess">Order submitted Successfully!</div>
 			<div id="orderFail">Please select all required field...!</div>
-			<div id="orderLogin">Please Login for submitting your order...!</div>
+			<div id="orderLogin">Please Login...!</div>
 			<div id="orderExpiry">Please select expiry details for submitting your order...!</div>
 			<div id="addedCart">Item added to cart.</div>
 			<div id="duplicate">Item already exists in the cart.</div>
@@ -227,7 +227,7 @@
 				<div id="table" class=" mb-2 mt-4"></div>
 
 
-				<div class="container">
+				<div class="container pb-3 pt-3">
 				  <main class="cards">
 				                  <div id="test12"></div>
 				              </main>
@@ -236,6 +236,9 @@
 
 				<div id="cart_button">
 					<h4 id="prodTotal" style="float: right;"></h4>
+						<div class="">
+							<input type="text" name="bday" id="datePickers" value="">
+						</div>
 					<div class="container-fluid p-0 mt-3 mb-3">
 						<div class="dropdown">
 						  <button type="button" class="btn btn-primary dropdown-toggle"  id="expirydetails" data-toggle="dropdown">
@@ -247,8 +250,6 @@
 						</div>
 					</div><!-- End of Search form -->
 
-				<div>
-				</div>
 					<button class="btn btn-warning mb-2 mt-" id="shopBtn" onclick="continueShopping()">Continue Shopping</button>
 					<button class="btn btn-success mb-2 mt-" id="checkBtn" onclick="checkOut()">Check Out</button>
 				</div>
