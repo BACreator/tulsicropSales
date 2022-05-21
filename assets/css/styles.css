@@ -199,6 +199,13 @@ body{
     letter-spacing: -.03em;
     cursor: pointer;
 }
+.checkSale input[type=checkbox] {
+  -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    outline: none;
+    content: none;
+}
 
 
 /*PRODUCT PAGE CSS*/
