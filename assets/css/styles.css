@@ -935,7 +935,7 @@ th{
     width: 100px;
     position: relative;
     top: 50%;
-    left: 20%;
+    left: 0%;
 }
 .slide_item{
     display: block;
@@ -964,6 +964,13 @@ th{
     width: 68%;
 }
 
+.modal-footer button{
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 0%;
+}
+
 }
 
 @media only screen and (min-width : 425px) {
@@ -982,6 +989,13 @@ th{
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
+
+.modal-footer button{
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 0%;
 }
 
 }
@@ -1004,6 +1018,13 @@ th{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+.modal-footer button{
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 0%;
 }
 
 }
@@ -1031,6 +1052,13 @@ th{
 
 }
 
+.modal-footer button{
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 0%;
+}
+
 }
 
 /* Medium Devices, Desktops */
@@ -1053,7 +1081,13 @@ th{
     width: 80%;
 }
 
+.modal-footer button{
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 0%;
 }
+
 }
 
 /* Large Devices, Wide Screens */
@@ -1069,5 +1103,12 @@ th{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+.modal-footer button{
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 0%;
 }
 }
