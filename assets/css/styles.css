@@ -45,7 +45,7 @@
 
 
 #prodTotalTable{
-        top: 110px;
+        top: 180px;
         right: 0px;
         position: absolute;
         margin-right: 15px;
@@ -73,6 +73,7 @@ body{
     /*margin-right: 15px;*/
     cursor: pointer;
 }
+#logoutuser{display: none;border-radius: 10px;}
 /*#navlogout{
     display: none;
 }*/
