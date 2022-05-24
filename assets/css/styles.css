@@ -44,12 +44,7 @@
 }
 
 
-#prodTotalTable{
-        top: 160px;
-        right: 0px;
-        position: absolute;
-        margin-right: 15px;
-    }
+
 .expiry li{
     margin-top: 10px;
     border:1px solid grey;
@@ -950,6 +945,12 @@ th{
     margin-right: auto;
     width: 80%;
 }
+#prodTotalTable{
+        /*top: 135px;*/
+        right: 0px;
+        position: absolute;
+        margin-right: 15px;
+    }
 
 }
 
@@ -977,6 +978,12 @@ th{
     top: 50%;
     left: 0%;
 }
+#prodTotalTable{
+        /*top: 135px;*/
+        right: 0px;
+        position: absolute;
+        margin-right: 15px;
+    }
 
 }
 
@@ -1004,6 +1011,12 @@ th{
     top: 50%;
     left: 0%;
 }
+#prodTotalTable{
+        /*top: 135px;*/
+        right: 0px;
+        position: absolute;
+        margin-right: 15px;
+    }
 
 }
 
@@ -1033,6 +1046,12 @@ th{
     top: 50%;
     left: 0%;
 }
+#prodTotalTable{
+        /*top: 135px;*/
+        right: 0px;
+        position: absolute;
+        margin-right: 15px;
+    }
 
 }
 
@@ -1056,6 +1075,12 @@ th{
     margin-right: auto;
     width: 80%;
 }
+#prodTotalTable{
+        /*top: 135px;*/
+        right: 0px;
+        position: absolute;
+        margin-right: 15px;
+    }
 
 }
 
@@ -1094,6 +1119,12 @@ th{
     top: 50%;
     left: 0%;
 }
+#prodTotalTable{
+        /*top: 135px;*/
+        right: 0px;
+        position: absolute;
+        margin-right: 15px;
+    }
 
 }
 
@@ -1118,4 +1149,10 @@ th{
     top: 50%;
     left: 0%;
 }
+#prodTotalTable{
+        /*top: 135px;*/
+        right: 0px;
+        position: absolute;
+        margin-right: 15px;
+    }
 }
