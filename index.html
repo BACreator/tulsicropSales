@@ -26,7 +26,7 @@
     		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     		
     		<link rel="stylesheet" href="assets/css/styles.css">
 		</head>
@@ -272,14 +272,14 @@
 			<div id="duplicate">Item already exists in the cart.</div>
 			<div class="container-fluid cart_container">
 				<h4 id="prodTotalTable"></h4>
-				<!--div id="table" class=" mb-2 mt-4"></div-->
+				<div id="table" class=" mb-2 mt-4"></div>
 
 
 				<div class="container pb-3 pt-3">
 						<div id="newrow">
-							
 						</div>
-						<div id="quantinput"></div>
+						<div id="quantinput">
+						</div>
 				  <!--main class="cards">
 				                  <div id="test12"></div>
 				              </main-->
@@ -317,8 +317,23 @@
 			</div><!--End of popupmodal>
 			<div id="overlay"></div-->
 
-
-
+<!--fieldset>
+		<legend>Contact Form</legend>
+		<form name="frmContact" method="get" action="">
+			<p>
+				<label for="Name">Name </label>
+				<input type="text" name="name" id="txtName">
+			</p>
+			<p>
+				<label for="email">Password</label>
+				<input type="text" name="password" id="txtEmail">
+			</p>
+			<p>&nbsp;</p>
+			<p>
+				<input type="submit" name="Submit" id="Submit" value="Submit" onclick="insert();">
+			</p>
+		</form>
+	</fieldset-->
 
 
 
@@ -376,7 +391,7 @@
 
 
 
-<!--div id="response"></div-->
+<div id="response"></div>
 
 
 
@@ -672,5 +687,56 @@
 			<!--Framework script-->
 			<script src="lib/js/search.js" defer></script>
 			<script src="lib/js/product.js"></script>
+			<script>
+				//var form = document.getElementById('myForm');
+				//function handleForm(event){event.preventDefault();}
+				//form.addEventListener('submit', handleForm);
+				/*function insert(){					
+					let username = document.getElementById('txtName').value;
+					let userpassword = document.getElementById('txtEmail').value;
+					var xhttp = new XMLHttpRequest();
+					  xhttp.onreadystatechange = function() {
+					    if (this.readyState == 4 && this.status == 200) {
+					     document.getElementById("response").innerHTML = xhttp.responseText;
+					     console.log(xhttp.responseText,"xhttp.responseText");
+					     console.log("xhtpp");
+					    }
+					  };
+					  xhttp.open("POST","connect.php",true);
+					  xhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+					  xhttp.send("username = "+username+ "password"+userpassword);
+					  console.log(username,"username");
+					  console.log(userpassword,"userpassword");
+					}
+					
+					$(document).ready(function(){
+						$.ajax({
+							//Action
+							url : 'db_conn.php',
+							//Method
+							type: 'POST',
+							data:{
+								//Get value
+								name : username,
+								password : userpassword,
+								action : "insert"
+
+							},
+							success:function(response){
+								if (response == 1) {
+									alert("Data Added Successfully");
+									console.log(data.name,"name");
+									console.log(data.password,"name");
+								}
+								else{
+									alert("Some problem occured")
+									console.log(data.name,"name");
+									console.log(data.password,"name");
+								}
+							}
+						})
+					})
+				}*/
+			</script>
 		</body>
 	</html>

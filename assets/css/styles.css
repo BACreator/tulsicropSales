@@ -1004,8 +1004,8 @@ th{
     width: 80%;
 }
 #prodTotalTable{
-        /*top: 135px;*/
-        right: 0px;
+        top: 145px;
+        right: -33px;
         position: absolute;
         margin-right: 15px;
     }
@@ -1037,7 +1037,7 @@ th{
     left: 0%;
 }
 #prodTotalTable{
-        /*top: 135px;*/
+        top: 123px;
         right: 0px;
         position: absolute;
         margin-right: 15px;
@@ -1208,9 +1208,9 @@ th{
     left: 0%;
 }
 #prodTotalTable{
-        /*top: 135px;*/
+        top: 120px;
         right: 0px;
         position: absolute;
-        margin-right: 15px;
+        margin-right: 30px;
     }
 }
