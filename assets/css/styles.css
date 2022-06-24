@@ -1003,12 +1003,12 @@ th{
     margin-right: auto;
     width: 80%;
 }
-#prodTotalTable{
+/*#prodTotalTable{
         top: 145px;
         right: -33px;
         position: absolute;
         margin-right: 15px;
-    }
+    }*/
 
 }
 
@@ -1036,12 +1036,12 @@ th{
     top: 50%;
     left: 0%;
 }
-#prodTotalTable{
+/*#prodTotalTable{
         top: 118px;
         right: 0px;
         position: absolute;
         margin-right: 15px;
-    }
+    }*/
 
 }
 
@@ -1069,12 +1069,12 @@ th{
     top: 50%;
     left: 0%;
 }
-#prodTotalTable{
+/*#prodTotalTable{
         top: 118px;
         right: 0px;
         position: absolute;
         margin-right: 15px;
-    }
+    }*/
 
 }
 
@@ -1104,12 +1104,12 @@ th{
     top: 50%;
     left: 0%;
 }
-#prodTotalTable{
-        /*top: 135px;*/
+/*#prodTotalTable{
+        /*top: 135px;
         right: 0px;
         position: absolute;
         margin-right: 15px;
-    }
+    }*/
 
 }
 
@@ -1133,12 +1133,12 @@ th{
     margin-right: auto;
     width: 80%;
 }
-#prodTotalTable{
-        /*top: 135px;*/
+/*#prodTotalTable{
+        /*top: 135px;
         right: 0px;
         position: absolute;
         margin-right: 15px;
-    }
+    }*/
 
 }
 
@@ -1177,12 +1177,12 @@ th{
     top: 50%;
     left: 0%;
 }
-#prodTotalTable{
-        /*top: 135px;*/
+/*#prodTotalTable{
+        /*top: 135px;
         right: 0px;
         position: absolute;
         margin-right: 15px;
-    }
+    }*/
 
 }
 
@@ -1207,10 +1207,10 @@ th{
     top: 50%;
     left: 0%;
 }
-#prodTotalTable{
+/*#prodTotalTable{
         top: 120px;
         right: 0px;
         position: absolute;
         margin-right: 30px;
-    }
+    }*/
 }
