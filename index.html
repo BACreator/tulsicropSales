@@ -239,6 +239,9 @@
 			               		<div>
 			               			<form method="post" action="connect.php">
 			               				<input class="btn btn-success" id="add_cart" type="button" name="" value="Add to Cart">
+								<button type="button" id="cart_btn1" data-toggle="collapse"data-target=".navbar-collapse.show">
+									<i class="bi bi-cart"></i>				    			
+								</button>
 			               			</form>
 			               			<!--button class="btn btn-success" id="add_cart">Add to Cart</button-->
 			               		</div>			               
@@ -292,6 +295,14 @@
 						<div class="">
 							<input type="text" name="bday" id="datePickers" value="">
 						</div>
+					<div id="session_dropdown">
+					<h6 style="float: left;">Session (M/E)</h6>
+						<div class="">						
+						<select name="sessiontype" id="sessiontype">
+							<option value="" disabled selected>Select</option>
+						</select>							 
+						</div>	 
+         				</div>		
 					<div class="container-fluid p-0 mt-3 mb-3">
 						<div class="dropdown">
 						  <button type="button" class="btn btn-primary dropdown-toggle"  id="expirydetails" data-toggle="dropdown">
