@@ -28,6 +28,31 @@
     left: 0;
     margin: 8px;
 }
+#session_dropdown{
+  color: #fff;
+  background-color: #c96;
+  border-color: #c96;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.85rem 1.5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: -.01em;
+  min-width: 170px;
+  border-radius: 0;
+  white-space: normal;
+  transition: all 0.3s;
+}
+#session_dropdown h6{color: #fff;}
+#sessiontype{
+  color: #fff;
+  background-color: #c96;
+  border-color: #fff;
+}
 
 @supports (display: grid) {
     .cards {
