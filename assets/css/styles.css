@@ -37,9 +37,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: small;
   padding: 0.85rem 1.5rem;
-  font-weight: 400;
-  font-size: 1.4rem;
   line-height: 1.5;
   letter-spacing: -.01em;
   min-width: 170px;
@@ -47,7 +46,7 @@
   white-space: normal;
   transition: all 0.3s;
 }
-#session_dropdown h6{color: #fff;}
+#session_dropdown h6{color: #fff;font-size: small !important;}
 #sessiontype{
   color: #fff;
   background-color: #c96;
