@@ -1,0 +1,44 @@
+{
+  "clientId" : "1234",
+  "systemId" : "2010",
+  "orderReferenceNo" : "DA1234",
+  "orderDate" : "30-09-2021",
+  "orderTime" : null,
+  "customerCode" : "9500",
+  "orderNo" : null,
+  "doctorCode" : null,
+  "doctorName" : null,
+  "expiryDate" : "30-09-2022",
+  "expiryNumber" : "234567",
+  "repCode" : "17",
+  "sessionType" : "M",
+  "userName" : "3131",
+  "lineItems" : [ {
+    "mfrCode" : "0004138",
+    "proName" : "EMESET 4MG TABS : 10s",
+    "proRate" : "36.7",
+    "qty" : "1",
+    "freeQty" : "1",
+    "schemeOffer" : "1",
+    "schemeRange" : "9",
+    "schemeHalfPerc" : "null"
+  }, {
+    "mfrCode" : "0004548",
+    "proName" : "DUONASE NASAL SPRAY 9.8ml : 70md",
+    "proRate" : "260.87",
+    "qty" : "11",
+    "freeQty" : "10",
+    "schemeOffer" : "1",
+    "schemeRange" : "9",
+    "schemeHalfPerc" : "50"
+  }, {
+    "mfrCode" : "0004614",
+    "proName" : "JUNIOR LANZOL 15 TAB : 15s",
+    "proRate" : "87.29",
+    "qty" : "15",
+    "freeQty" : "10",
+    "schemeOffer" : "0",
+    "schemeRange" : "0",
+    "schemeHalfPerc" : "null"
+  } ]
+}

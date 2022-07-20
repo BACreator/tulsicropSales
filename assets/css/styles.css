@@ -362,7 +362,7 @@ section {
 
 /*======products-details=====*/
 #product_layout{display: none;}
-#search_layout{display: block;}
+#search_layout{display: none;}
 ._product-detail-content {
     background: #fff;
     padding: 15px;
@@ -774,6 +774,27 @@ th{
 }
 
 #orderSuccess.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#checkLogin {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#checkLogin.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
