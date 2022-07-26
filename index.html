@@ -164,13 +164,13 @@
 			
 			<!--Sales customer search-->
 			<div class="container">
-				<!--div>
+				<div>
 					<input type="text" name="" placeholder="Customer search" aria-label="Search" id="searchCustmer" value="" autocomplete="off" onfocus="this.value=''">
 					<ul id="matchCustomer-list" name="matchCustid"></ul>
-				</div-->
-				<!--p id="customerName" class="ml-2"></p-->
+				</div>
+				<p id="customerName" class="ml-2"></p>
 			</div>
-			<!--button class="btn" onclick="send()">Send</button-->
+			<button class="btn" onclick="send()">Send</button>
 			<!-- Search form -->
 			<div class="container" id="search_layout">
 				<div class="active-pink-4 mb-2 mt-4">
@@ -280,7 +280,17 @@
 			<div id="duplicate">Item already exists in the cart.</div>
 			<div class="container-fluid cart_container">
 				<h4 id="prodTotalTable" class="mt-2"></h4>
-				<div id="table"></div>
+
+				<div id="custDetails">
+						<button class="btn btn-warning" id="custBack" onclick="cstomerlist()">Back to Customer List</button>
+
+					<div id="cartTable">
+					</div>
+				</div>
+				<div id="table">
+
+					
+				</div><div id="tableItems"></div>
 
 
 				<div class="container pb-3 pt-3">
@@ -363,7 +373,6 @@
 
 
 
-
 				<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 				  aria-hidden="true">
 				  <div class="modal-dialog" role="document">
@@ -388,7 +397,7 @@
 				        </div>
 				        <div class="checkSale">
 				            <input type="checkbox" id="sales" name="sales">
-				            <!--label for="sales">Sales</label-->
+				            <label for="sales">Sales</label>
 				        </div>
 
 				      </div>
@@ -407,9 +416,6 @@
 
 
 
-
-
-<div id="response"></div>
 
 
 
