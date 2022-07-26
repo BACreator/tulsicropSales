@@ -170,7 +170,7 @@
 				</div>
 				<p id="customerName" class="ml-2"></p>
 			</div>
-			<button class="btn" onclick="send()">Send</button>
+			
 			<!-- Search form -->
 			<div class="container" id="search_layout">
 				<div class="active-pink-4 mb-2 mt-4">
@@ -241,7 +241,7 @@
 			               		</div>		
 			               		<div>
 			               			<form method="post" action="connect.php">
-			               				<input class="btn btn-success" id="add_cart" type="button" name="" value="Add to Cart">
+			               				<input class="btn btn-info" id="add_cart" type="button" name="" value="Add to selected customer">
 								<button type="button" id="cart_btn1" data-toggle="collapse"data-target=".navbar-collapse.show">
 									<i class="bi bi-cart"></i>				    			
 								</button>
@@ -264,6 +264,9 @@
 			            	</div>
 			         	</div>
 			      	</div>
+			   	</div>
+			   	<div class="row">
+			   		<label><b>Add selected customer and slected products to cart : </b></label><button id="custsendbtn" class="btn btn-success" onclick="send()">Add to cart</button>
 			   	</div>
 			</div><!--End of product page container-->
 			<!--Cart Layout-->			

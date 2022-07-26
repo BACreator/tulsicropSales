@@ -219,6 +219,8 @@ body{
     letter-spacing: -.03em;
     cursor: pointer;
 }
+#searchCustmer{display: none;}
+#custsendbtn{display: none;}
 #custDetails {
   display: none;
 }
