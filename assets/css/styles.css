@@ -219,7 +219,13 @@ body{
     letter-spacing: -.03em;
     cursor: pointer;
 }
-#searchCustmer{display: none;}
+.form_Custsearch{
+    border-radius: 33px;
+    border: 1px solid #21252924;
+    background-color: #f9f9f9;
+    margin-bottom: 0rem;
+}
+#searchCustmerLayout{display: none;}
 #custsendbtn{display: none;}
 #custDetails {
   display: none;
@@ -227,6 +233,15 @@ body{
 #custBack{
   float: right;
   margin-bottom: 2rem;
+}
+#matchCustomer-list li{
+  font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 2.4rem;
+      color: #333;
+      letter-spacing: -.03em;
+      cursor: pointer;
 }
 /*.checkSale input[type=checkbox] {
   -moz-appearance:none;
