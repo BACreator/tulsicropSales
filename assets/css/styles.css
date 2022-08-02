@@ -654,7 +654,11 @@ section {
     width: -webkit-fill-available;
     text-align: center;
 }
-
+.custlable{
+  font-size: 15px;
+  font-weight: 500;
+  color: #C46200;
+}
 /*HEARDER CART ICON CSS*/
 .cartlogout{
   justify-content: flex-end;
