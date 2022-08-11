@@ -659,6 +659,7 @@ section {
   font-weight: 500;
   color: #C46200;
 }
+.custNames{cursor: pointer;}
 /*HEARDER CART ICON CSS*/
 .cartlogout{
   justify-content: flex-end;

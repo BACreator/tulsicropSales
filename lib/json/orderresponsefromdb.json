@@ -13,32 +13,147 @@
   "repCode" : "17",
   "sessionType" : "M",
   "userName" : "3131",
-  "lineItems" : [ {
-    "mfrCode" : "0004138",
-    "proName" : "EMESET 4MG TABS : 10s",
-    "proRate" : "36.7",
-    "qty" : "1",
-    "freeQty" : "1",
-    "schemeOffer" : "1",
-    "schemeRange" : "9",
-    "schemeHalfPerc" : "null"
-  }, {
-    "mfrCode" : "0004548",
-    "proName" : "DUONASE NASAL SPRAY 9.8ml : 70md",
-    "proRate" : "260.87",
-    "qty" : "11",
-    "freeQty" : "10",
-    "schemeOffer" : "1",
-    "schemeRange" : "9",
-    "schemeHalfPerc" : "50"
-  }, {
-    "mfrCode" : "0004614",
-    "proName" : "JUNIOR LANZOL 15 TAB : 15s",
-    "proRate" : "87.29",
-    "qty" : "15",
-    "freeQty" : "10",
-    "schemeOffer" : "0",
-    "schemeRange" : "0",
-    "schemeHalfPerc" : "null"
-  } ]
+  "lineItems" : [{
+                            "address1": " 476/29,19TH MAIN 4TH T",
+                            "address2": " BLOCK  JAYANAGAR",
+                            "areaCode": " L19",
+                            "custCode": " 0002",
+                            "custName": "DR K DWARAKANATH : 0002 : L19",
+                            "lineItems": [
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001012",
+                                                "proName": "MINICHEK F 60ml SPRAY : 60ml",
+                                                "proRate": " 643.57",
+                                                "qty": "4",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                              },
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001068",
+                                                "proName": "LEVESAM 250 TABS : 15s",
+                                                "proRate": " 68.64",
+                                                "qty": "3",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                            } 
+                                        ]
+                  },
+                  {
+                            "address1": " # 75 33-01 NEAR ANJANEYA",
+                            "address2": " TEML ASWANTHNAGAR CHINNAP",
+                            "areaCode": " L17",
+                            "custCode": " 0217",
+                            "custName": "AI%MARUTHI MED & GEN STR : 0217 : L17",
+                            "lineItems": [
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001012",
+                                                "proName": "MINICHEK F 60ml SPRAY : 60ml",
+                                                "proRate": " 643.57",
+                                                "qty": "4",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                              },
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001068",
+                                                "proName": "LEVESAM 250 TABS : 15s",
+                                                "proRate": " 68.64",
+                                                "qty": "3",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                            } 
+                                        ]
+                  },{
+                            "address1": " 62,3RD MAIN,14 TH CROSS",
+                            "address2": " WILSON GARDEN",
+                            "areaCode": " L30",
+                            "custCode": " 0007",
+                            "custName": "AMRUTH PHARMA # MED GEN",
+                            "lineItems": [
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001012",
+                                                "proName": "MINICHEK F 60ml SPRAY : 60ml",
+                                                "proRate": " 643.57",
+                                                "qty": "4",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                              },
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001068",
+                                                "proName": "LEVESAM 250 TABS : 15s",
+                                                "proRate": " 68.64",
+                                                "qty": "3",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                            } 
+                                        ]
+                  },{
+                            "address1": " #642/607 1 GF MCC ARCAD",
+                            "address2": " WHITEFIELD VARTHUR KODI",
+                            "areaCode": " L19",
+                            "custCode": " 0019",
+                            "custName": "RAMDEV MEDICALS",
+                            "lineItems": [
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001012",
+                                                "proName": "MINICHEK F 60ml SPRAY : 60ml",
+                                                "proRate": " 643.57",
+                                                "qty": "4",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                              },
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001068",
+                                                "proName": "LEVESAM 250 TABS : 15s",
+                                                "proRate": " 68.64",
+                                                "qty": "3",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                            } 
+                                        ]
+                  },{
+                            "address1": " NO 68 100FT RD VYSYA BANK",
+                            "address2": " LAY OUT BTM 2ND STAGE",
+                            "areaCode": " L83",
+                            "custCode": " 0027",
+                            "custName": "AMULYA MEDICALS  %",
+                            "lineItems": [
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001012",
+                                                "proName": "MINICHEK F 60ml SPRAY : 60ml",
+                                                "proRate": " 643.57",
+                                                "qty": "4",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                              },
+                                           {
+                                                "freeQty": null,
+                                                "mfrCode": "0001068",
+                                                "proName": "LEVESAM 250 TABS : 15s",
+                                                "proRate": " 68.64",
+                                                "qty": "3",
+                                                "schemeHalfPerc": "null",
+                                                "schemeOffer": " 0",
+                                                "schemeRange": " 0"
+                                            } 
+                                        ]
+                  }
+                ]
 }
